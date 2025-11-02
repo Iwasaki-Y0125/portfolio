@@ -1,9 +1,36 @@
-my-website/
+Portfolio/
 ├── index.html
+├── partials/
+│   ├── header.html
+│   ├── profile.html
+│   ├── portfolio.html
+│   ├── mini_game.html
+│   └── footer.html
 │
-├── style.css
+├── CSS/
+│   ├── base.css
+│   ├── color.css
+│   ├── font.css
+│   ├── layout.css
+│   ├──  responsive.css
+│   │
+│   ├── components/
+│   │    ├── button.css
+│   │    ├── mini_game.css
+│   │    ├── nav.css
+│   │    ├── portfolio.css
+│   │    ├── profile.css
+│   │    └── sns.css
+│   │
+│   └── fonts/
+│        ├── JF-Dot-k12x10.ttf
+│        └── misaki_gothic_2nd.ttf
 │
-├── script.js
+├── js/
+│   ├── main.js
+│   ├── scroll.js
+│   ├── darkmode.js
+│   └── mini_game.js
 │
 ├── images/
 │   ├── top_light.GIF
@@ -21,6 +48,6 @@ my-website/
 │   ├── D.GIF
 │   └── E.GIF
 │
-└── fonts/
-    ├── JF-Dot-k12x10.ttf
-    └── misaki_gothic_2nd.ttf
+├── minigame.ini
+├── structure.txt
+└── README.md
