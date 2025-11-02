@@ -1,0 +1,104 @@
+#img-top {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-top: 30px solid rgb(146, 146, 146);
+  border-bottom: 30px solid rgb(146, 146, 146);
+}
+
+nav p {
+  font-family: "misaki_gothic_2nd", "JF-Dot-k12x10", "游ゴシック", sans-serif;
+}
+
+.nav-block {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.nav {
+  flex: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  max-width: 400px;
+  height: 210px;
+  margin: 8px;
+
+  background-color: var(--nb);
+  border: 10px double rgb(167, 167, 167);
+  border-radius: 10px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: -4rem;
+  gap: 1.5rem;
+}
+
+.disabledLink {
+  pointer-events: none;
+  color: var(--dl) !important;
+  text-decoration: none;
+  cursor: default;
+}
+
+.snsLinks img {
+  width: 30px;
+  height: auto;
+  display: flex;
+  padding: 10px;
+  margin: -2px;
+}
+
+#iconX,
+#iconGithub,
+#iconNote {
+  flex: 3;
+  display: flex; /* 中身（ul）を中央に配置するため */
+  flex-direction: column; /* 縦並びにする */
+  justify-content: center; /* 横方向の中央寄せ */
+  align-items: center; /* 縦方向の中央寄せ */
+
+  background-color: var(--nb); /*背景色 */
+  border-radius: 50%; /* 枠線の丸み*/
+  box-shadow: 0 5px 0 #acabab;
+  transition: all 0.3s;
+}
+
+#iconX:hover,
+#iconGithub:hover,
+#iconNote:hover {
+  transform: translate(0, 3px);
+  box-shadow: 0 2px 0 #acabab;
+}
+
+/** ライトモードボタン */
+#dark-mode-btn {
+  font-family: "misaki_gothic_2nd", "JF-Dot-k12x10", "游ゴシック", sans-serif;
+  width: 100px; /* 横幅*/
+  height: 30px; /*縦幅*/
+
+  background-color: var(--lb); /* 背景色 */
+  color: var(--lf);
+
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px; /* 枠線の丸み*/
+
+  position: absolute;
+  top: -10%; /* 中段よりやや上に調整 */
+  right: 0%; /* 右端に近づける */
+  box-shadow: 0 5px 0 #acabab;
+  transition: all 0.3s;
+}
+
+#dark-mode-btn:hover {
+  transform: translate(0, 3px);
+  box-shadow: 0 2px 0 #acabab;
+}

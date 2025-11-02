@@ -1,0 +1,86 @@
+/** スマホ時の縦並び切り替え */
+@media screen and (max-width: 600px) {
+  .br-sp {
+    display: inline;
+  }
+  .br-pc {
+    display: none;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    height: auto; /* 画面幅に合わせて高さ可変に */
+  }
+
+  h1 {
+    writing-mode: horizontal-tb;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-right: 0rem;
+  }
+
+  .top-block {
+    align-items: center; /* 画像・ナビ・SNSを中央に寄せる */
+  }
+
+  .nav-block {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .status0 {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  #img-top,
+  .nav {
+    width: 90vw;
+    max-width: 400px;
+    margin: 0 auto 1rem auto;
+  }
+
+  .snsLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 90vw;
+    max-width: 400px;
+    margin: 0 auto 1rem auto;
+  }
+
+  .snsLinks img {
+    width: 30px;
+    height: auto;
+    padding: 10px;
+    margin: 0;
+  }
+
+  #dark-mode-btn {
+    position: static;
+    display: block;
+    width: 50%;
+    max-width: 160px;
+    margin: 1rem auto 0 auto;
+  }
+
+  .jikosyoukai {
+    flex-direction: column;
+    width: 95%;
+    max-width: 400px;
+  }
+}
+
+/*スマホのみ改行 */
+.br-sp {
+  display: none;
+}
+/*PCのみ改行 */
+.br-pc {
+  display: inline;
+}
