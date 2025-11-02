@@ -1,11 +1,5 @@
 /**ゲームの画面　*/
 /*画面の表示⇔非表示 */
-.screen {
-  display: flex;
-  justify-content: center; /* 横方向中央 */
-  align-items: center; /* 縦方向中央 */
-  padding: 3rem 0;
-}
 .hidden {
   display: none;
 }
@@ -18,7 +12,6 @@
   background-color: var(--nb); /*背景色 */
   border: 10px double rgb(167, 167, 167);
   border-radius: 10px; /* 枠線の丸み*/
-  padding: 1rem;
   box-sizing: border-box;
   text-align: center;
 
@@ -26,6 +19,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin:  0 auto;
 }
 
 .mini_game{
@@ -86,11 +80,11 @@
 
   text-align: left;
   padding-left: 4rem;
-  transform: translateY(-3rem);
+  /* transform: translateY(-1rem); */
 }
 
 #rendaBtn:active {
-  transform: translate(0, -2.5rem);
+  transform: translate(0, 0.4rem);
   box-shadow: 0 2px 0 #acabab;
 }
 
@@ -99,20 +93,20 @@
   padding-left: 2rem;
 }
 
-#playTime,
+#playTimeText,
 #playScore {
-  transform: translateY(-4rem);
+  transform: translateY(-1rem);
 }
 
 #playTime,
 #playScore,
 #resultScore,
 #rank {
-  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-size: clamp(1.6rem, 2.5vw, 1.6rem);
 }
 
-.playScore {
-  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+#explanationResult {
+  margin-top: 4rem;
 }
 
 #rankImg {
@@ -147,6 +141,8 @@
 
 #postToX {
   font-family: "JF-Dot-k12x10", "游ゴシック", sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  margin-bottom: 5rem;
 }
 
 #resultScore,

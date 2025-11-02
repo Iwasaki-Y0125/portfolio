@@ -41,7 +41,7 @@ a:visited:hover {
 
 .sectionTitle {
   margin-bottom: 2rem;
-  border-bottom: 2px dotted rgb(255, 0, 0); /* 点線のボーダー */
+  border-bottom: 2px dotted rgb(255, 0, 0);
 }
 
 article {

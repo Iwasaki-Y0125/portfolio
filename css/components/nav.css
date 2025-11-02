@@ -6,6 +6,14 @@
   border-bottom: 30px solid rgb(146, 146, 146);
 }
 
+.top-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  gap: 1rem;
+}
+
 nav p {
   font-family: "misaki_gothic_2nd", "JF-Dot-k12x10", "游ゴシック", sans-serif;
 }
