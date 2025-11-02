@@ -379,7 +379,7 @@ p   {
   color: var(--lf);
 }
 
-.backToTop, .footer-text {
+.backToTop, .footer {
   display: block;
   text-align: center;
   margin: 2rem;

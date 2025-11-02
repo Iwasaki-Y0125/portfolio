@@ -1,3 +1,27 @@
+// 共通パーツを読み込む関数
+async function loadPartial(id, filePath) {
+  try {
+    const response = await fetch(filePath);
+    if (!response.ok) throw new Error(`Failed to load ${filePath}`);
+    const html = await response.text();
+    console.log("loadPartial called:", id, filePath);
+    console.log("element before insert:", document.getElementById(id));
+    console.log("fetched html length (chars):", html.length);
+    document.getElementById(id).innerHTML = html;
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+// ページ読み込み時に部分HTMLを差し込む
+document.addEventListener("DOMContentLoaded", () => {
+  loadPartial("header", "partials/header.html");
+  loadPartial("profile", "partials/profile.html");
+  loadPartial("portfolio", "partials/portfolio.html");
+  loadPartial("mini_game", "partials/mini_game.html");
+  loadPartial("footer", "partials/footer.html");
+});
+
 //todo 1. 各セクションへ滑らかに自動スクロール
 // 1 各セクションのIDを設置
 // 2 クリックするリンクを設置
@@ -164,20 +188,22 @@ function startPlay() {
     if (playTime <= 0) {
       clearInterval(playInterval); // カウントダウンが0になったら停止
       isPlaying = false; // ゲームが終了したことを示すフラグを更新
-      document.getElementById("rendaPlay").classList.replace("screen", "hidden"); // 連打中画面を非表示
+      document
+        .getElementById("rendaPlay")
+        .classList.replace("screen", "hidden"); // 連打中画面を非表示
       document.getElementById("rendaEnd").classList.replace("hidden", "screen"); // 終了画面を表示
       setTimeout(() => {
-        document.getElementById("rendaEnd").classList.replace("screen", "hidden"); // 終了画面を非表示
+        document
+          .getElementById("rendaEnd")
+          .classList.replace("screen", "hidden"); // 終了画面を非表示
         document
           .getElementById("rendaResult")
           .classList.replace("hidden", "screen"); // 終了画面を表示
         showResult();
       }, 1000); // 1秒後に結果画面を表示
     }
-  }, 1000)}; // 1秒ごとに実行
-
-
-
+  }, 1000);
+} // 1秒ごとに実行
 
 // 4.結果画面
 function showResult() {
