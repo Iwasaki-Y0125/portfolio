@@ -1,0 +1,154 @@
+/**ゲームの画面　*/
+/*画面の表示⇔非表示 */
+.hidden {
+  display: none;
+}
+
+.rendaBlock {
+  width: 100%;
+  max-width: 500px;
+  height: 550px;
+
+  background-color: var(--nb); /*背景色 */
+  border: 10px double rgb(167, 167, 167);
+  border-radius: 10px; /* 枠線の丸み*/
+  box-sizing: border-box;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:  0 auto;
+}
+
+.mini_game{
+  -webkit-user-select: none; /* Chrome, Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
+  user-select: none;         /* 標準 */
+}
+
+#rendatitle {
+  font-size: clamp(1.5rem, 13vw, 4rem);
+  /* clamp(最小値, 推奨値（可変）, 最大値) */
+  font-family: "JF-Dot-k12x10", "游ゴシック", sans-serif;
+  transform: translateY(-3rem);
+}
+
+#startBtn {
+  font-family: "misaki_gothic_2nd", "JF-Dot-k12x10", "游ゴシック", sans-serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  width: 180px; /* 横幅*/
+  height: 100px; /*縦幅*/
+
+  background-color: var(--lb); /* 背景色 */
+  color: var(--lf);
+
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px; /* 枠線の丸み*/
+  box-shadow: 0 7px 0 #acabab;
+  transition: all 0.2s;
+}
+
+#startBtn:hover {
+  transform: translate(0, 7px);
+  box-shadow: 0 2px 0 #acabab;
+}
+
+#readyMessage {
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  margin-top: 2rem;
+}
+
+#readyTime {
+  font-size: clamp(2rem, 18vw, 6rem);
+}
+
+#rendaBtn {
+  font-family: "JF-Dot-k12x10", "游ゴシック", sans-serif;
+  font-size: clamp(2rem, 15vw, 3.5rem);
+  width: 300px; /* 横幅*/
+  height: 150px; /*縦幅*/
+
+  background-color: var(--lb); /* 背景色 */
+  color: var(--lf);
+
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px; /* 枠線の丸み*/
+  box-shadow: 0 8px 0 #acabab;
+
+  text-align: left;
+  padding-left: 4rem;
+  /* transform: translateY(-1rem); */
+}
+
+#rendaBtn:active {
+  transform: translate(0, 0.4rem);
+  box-shadow: 0 2px 0 #acabab;
+}
+
+#rendaEnd p {
+  font-size: clamp(2rem, 10vw, 6rem);
+  padding-left: 2rem;
+}
+
+#playTimeText,
+#playScore {
+  transform: translateY(-1rem);
+}
+
+#playTime,
+#playScore,
+#resultScore,
+#rank {
+  font-size: clamp(1.6rem, 2.5vw, 1.6rem);
+}
+
+#explanationResult {
+  margin-top: 4rem;
+}
+
+#rankImg {
+  width: 150px; /* 横幅*/
+  height: auto; /*縦幅*/
+}
+
+#rankMessage {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+#retryBtn {
+  font-family: "misaki_gothic_2nd", "JF-Dot-k12x10", "游ゴシック", sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  width: clamp(180px, 30vw, 250px);
+  height: clamp(70px, 8vw, 80px);
+  padding: 0.8rem;
+
+  background-color: var(--lb);
+  color: var(--lf);
+
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 0 5px 0 #acabab;
+  transition: all 0.2s;
+}
+
+#retryBtn:hover {
+  transform: translate(0, 3px);
+  box-shadow: 0 2px 0 #acabab;
+}
+
+#postToX {
+  font-family: "JF-Dot-k12x10", "游ゴシック", sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  margin-bottom: 5rem;
+}
+
+#resultScore,
+#rank,
+#rankMessage,
+#retryBtn {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}

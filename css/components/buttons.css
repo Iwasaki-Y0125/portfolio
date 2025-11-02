@@ -1,0 +1,37 @@
+/* components/buttons.css */
+.button {
+  font-family: "misaki_gothic_2nd", "JF-Dot-k12x10", "游ゴシック", sans-serif;
+  border-radius: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0 5px 0 #acabab;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+/* ライトボタン・ダークボタン用クラス */
+.button-light {
+  background-color: var(--lb);
+  color: var(--lf);
+}
+
+.button-dark {
+  background-color: var(--lb);
+  color: var(--lf);
+}
+
+/* ホバーとアクティブ共通 */
+.button:hover {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #acabab;
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 0 #acabab;
+}
+
+/* 個別ボタンの例 */
+#startBtn, #retryBtn, #dark-mode-btn {
+  width: clamp(100px, 30vw, 180px);
+  height: clamp(30px, 8vw, 100px);
+}

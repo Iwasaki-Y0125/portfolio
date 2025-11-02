@@ -1,0 +1,59 @@
+/** フォント全体設定 */
+/* タイトル用フォント */
+@font-face {
+  font-family: "misaki_gothic_2nd";
+  src: url("fonts/misaki_gothic_2nd.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* 本文用フォント */
+@font-face {
+  font-family: "JF-Dot-k12x10";
+  src: url("fonts/JF-Dot-k12x10.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/**　文字の設定 */
+/* 通常の文字 */
+p {
+  font-family: "JF-Dot-k12x10", "游ゴシック", sans-serif;
+  margin: 1rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.9;
+}
+
+/* リンク文字 */
+a {
+  color: var(--a);
+  margin: 1rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.9;
+}
+a:visited {
+  color: var(--av);
+}
+a:hover,
+a:visited:hover {
+  color: var(--ah);
+}
+
+.sectionTitle {
+  margin-bottom: 2rem;
+  border-bottom: 2px dotted rgb(255, 0, 0);
+}
+
+article {
+  text-align: left;
+}
+
+/* ちょっと大きめの文字 */
+h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  margin-top: 3rem;
+}
+
+h3:hover {
+  color: var(--ah);
+}

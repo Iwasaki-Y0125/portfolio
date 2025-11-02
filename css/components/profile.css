@@ -1,0 +1,53 @@
+.jikosyoukai {
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--nb); /*背景色 */
+  border: 10px double rgb(167, 167, 167); /* 点線のボーダー */
+  border-radius: 10px; /* 枠線の丸み*/
+}
+
+#icon-small {
+  width: 100px; /* 横幅*/
+  height: auto; /*縦幅*/
+  flex: 1;
+}
+
+.jikosyoukai p {
+  flex: 6;
+}
+
+.status0 {
+  display: flex;
+  align-items: flex-start;
+  color: #ffffff;
+  margin-top: 1rem;
+  background-color: rgb(0, 0, 0); /*背景色 */
+  border: 10px double rgb(233, 233, 233); /* 点線のボーダー */
+  border-radius: 10px; /* 枠線の丸み*/
+}
+
+.status0 p {
+  line-height: 2.5;
+  margin: 1rem 0rem 1rem 1rem; /*上右下左*/
+}
+
+.status1 {
+  flex: 1;
+  padding: 1rem;
+}
+
+.status2 {
+  flex: 1;
+  padding: 1rem;
+}
+
+.purpose_article {
+  background-color: var(--nb);
+  border-radius: 10px;
+  border: 10px solid var(--nb);
+}
+
+.prof1 {
+  background-color: var(--lb); /* 背景色 */
+  color: var(--lf);
+}
