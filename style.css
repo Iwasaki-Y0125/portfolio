@@ -245,7 +245,7 @@ h1 {
 }
 
 /** ライトモードボタン */
-#L-Bbutton {
+#dark-mode-btn {
   font-family: "misaki_gothic_2nd", "JF-Dot-k12x10", "游ゴシック", sans-serif;
   width: 100px; /* 横幅*/
   height: 30px; /*縦幅*/
@@ -263,7 +263,7 @@ h1 {
   transition: all 0.3s;
 }
 
-#L-Bbutton:hover {
+#dark-mode-btn:hover {
   transform: translate(0, 3px);
   box-shadow: 0 2px 0 #acabab;
 }
@@ -367,7 +367,7 @@ nav p {
 }
 
 /* 通常の文字 */
-p   {
+p {
   font-family: "JF-Dot-k12x10", "游ゴシック", sans-serif;
   margin: 1rem;
   font-size: clamp(0.9rem, 2vw, 1rem);
@@ -379,14 +379,15 @@ p   {
   color: var(--lf);
 }
 
-.backToTop, .footer {
+.backToTop,
+.footer {
   display: block;
   text-align: center;
   margin: 2rem;
   padding: 2rem;
 }
 
-.OGP{
+.OGP {
   display: block;
   text-align: center;
 }
@@ -437,6 +438,13 @@ p   {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.mini_game{
+  -webkit-user-select: none; /* Chrome, Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
+  user-select: none;         /* 標準 */
 }
 
 #rendatitle {
@@ -498,7 +506,7 @@ p   {
   box-shadow: 0 2px 0 #acabab;
 }
 
-#rendaEnd p{
+#rendaEnd p {
   font-size: clamp(2rem, 10vw, 6rem);
   padding-left: 2rem;
 }
@@ -624,7 +632,7 @@ p   {
     margin: 0;
   }
 
-  #L-Bbutton {
+  #dark-mode-btn {
     position: static;
     display: block;
     width: 50%;
