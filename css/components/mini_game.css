@@ -1,8 +1,8 @@
 /**ゲームの画面　*/
 /*画面の表示⇔非表示 */
-.hidden {
+/* .hidden {
   display: none;
-}
+} */
 
 .rendaBlock {
   width: 100%;
@@ -99,19 +99,22 @@
 }
 
 #playTime,
-#playScore,
+#playScore{
+  font-size: clamp(1.5rem, 2.5vw, 1.6rem);
+}
+
 #resultScore,
 #rank {
-  font-size: clamp(1.6rem, 2.5vw, 1.6rem);
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
 }
 
 #explanationResult {
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 #rankImg {
-  width: 150px; /* 横幅*/
-  height: auto; /*縦幅*/
+  width: 150px;
+  height: auto;
 }
 
 #rankMessage {
@@ -139,10 +142,10 @@
   box-shadow: 0 2px 0 #acabab;
 }
 
-#postToX {
+.x-post-button {
   font-family: "JF-Dot-k12x10", "游ゴシック", sans-serif;
-  font-size: clamp(1rem, 2.5vw, 1.6rem);
-  margin-bottom: 5rem;
+  font-size: clamp(0.8rem, 2.5vw, 1rem) !important;
+  margin-bottom: 6rem;
 }
 
 #resultScore,

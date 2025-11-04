@@ -1,17 +1,18 @@
 /** スマホ時の縦並び切り替え */
 @media screen and (max-width: 600px) {
+  /** PCのみ改行 */
   .br-sp {
-    display: inline;
-  }
-  .br-pc {
-    display: none;
-  }
+      display: inline;
+    }
+    .br-pc {
+      display: none;
+    }
 
   .header {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    height: auto; /* 画面幅に合わせて高さ可変に */
+    height: auto; /
   }
 
   h1 {
@@ -22,7 +23,7 @@
   }
 
   .top-block {
-    align-items: center; /* 画像・ナビ・SNSを中央に寄せる */
+    align-items: center;
   }
 
   .nav-block {
@@ -62,11 +63,15 @@
   }
 
   #dark-mode-btn {
-    position: static;
+    position: static !important;
     display: block;
     width: 50%;
     max-width: 160px;
-    margin: 1rem auto 0 auto;
+    margin: 0.5rem 1rem 0 auto;
+  }
+
+  #site-title {
+    position: static;
   }
 
   .jikosyoukai {
@@ -74,13 +79,4 @@
     width: 95%;
     max-width: 400px;
   }
-}
-
-/*スマホのみ改行 */
-.br-sp {
-  display: none;
-}
-/*PCのみ改行 */
-.br-pc {
-  display: inline;
 }
