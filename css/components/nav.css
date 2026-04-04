@@ -20,6 +20,7 @@ nav p {
 
 .nav-block {
   display: flex;
+  align-items: flex-end;
   gap: 0.5rem;
   width: 100%;
   max-width: 400px;
@@ -63,6 +64,10 @@ nav p {
   display: flex;
   padding: 10px;
   margin: -2px;
+}
+
+.snsLinks {
+  align-self: flex-end;
 }
 
 #iconX,

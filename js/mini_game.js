@@ -105,7 +105,7 @@ const ranks = [
     const postUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(
       postText
     )}`;
-    window.open(postUrl, "_blank"); // 新しいタブでXに投稿
+    window.open(postUrl, "_blank", "noopener,noreferrer"); // 新しいタブでXに投稿
   });
 
   //* リトライボタン：3秒待機画面に戻る
