@@ -46,13 +46,11 @@
 
   .snsLinks {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    gap: 1rem;
-    width: 90vw;
+    width: 100%;
     max-width: 400px;
-    margin: 0 auto 1rem auto;
+    margin: 0;
   }
 
   .snsLinks img {
@@ -78,5 +76,17 @@
     flex-direction: column;
     width: 95%;
     max-width: 400px;
+  }
+
+  .project-row {
+    grid-template-columns: 7.5em 1fr;
+  }
+
+  .project-detail summary {
+    font-size: 0.95rem;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
   }
 }

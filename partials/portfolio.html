@@ -3,32 +3,189 @@
   <h2>ポートフォリオ</h2>
   </section>
 
-  <div class="portfolio_article">
-  <a class="OGP" href="https://torisetsu-me.onrender.com/" target="_blank">
-    <img class="OGP_img" id="on_service" src="image/torisetsu_me_OGP.png" " alt="torisetsu_me_OGP"/>
-    <br>わたしのトリセツ．ｍｅ/自己紹介プロフィールページ作成アプリ</a>
-    <p>♦プログラミング1か月目で作成<br>
-    <span style="color: red">♦Buttle of RUNTEQ 2025 新人賞受賞</span></p>
-    <p>期日に間に合わせるために付け焼刃の知識とAIでなんとか作成。
-      デプロイ後にバックエンド周りでエラーが頻発し地獄を見る。自分にはもっと基礎力が必要だなと反省した思い出</p>
-  <a class="portfolio_link" href="https://github.com/Iwasaki-Y0125/torisetsu_me" target="_blank">わたしのトリセツ.ｍｅのＧｉｔＨｕｂ</a><br>
-  <a class="portfolio_link" href="https://note.com/iwayu0125/n/nde4850a1a14a" target="_blank">わたしのトリセツ.ｍｅのｎｏｔｅ</a><br>
-  </div>
-  <br>
-  <div class="portfolio_article">
-    <div class="OGP">
-    <img class="OGP_img"  src="image/end_weatherlogproto_OGP.png" " alt="weatherlogproto_OGP"/><br>
-    <p>秋のお天気 ゆらぎログ　/　天気×気分記録アプリ</p>
+    <div class="portfolio_article project-card">
+    <div class="project-header">
+      <p class="project-rating">SNS疲れの人のための本音を投稿できるSNS</p>
+      <p class="project-title">ToneTwo</p>
+
+    <a href="https://www.tonetwo.net" target="_blank" rel="noopener noreferrer">
+        <img class="OGP_img" src="image/tone_two_OGP.png" alt="tone_two_OGP_OGP" />
+    </a><br>
+      <a class="portfolio_link" href="https://github.com/Iwasaki-Y0125/tonetwo" target="_blank" rel="noopener noreferrer">ToneTwo の GitHub</a>
     </div>
-    <p>♦プログラミング4か月目で作成<br>
-      ♦RUNTEQミニアプリウィーク2025応募</p>
-    <p>背景にリラックスできる動画を用いるなどUXを向上させる工夫を実施。<br>
-      当初は気象病予防アプリを企画していたが、データベース設計の理解を深める必要があると判断し、
-      企画を縮小し、より実現可能な方向で応募期日に間に合わせる方向でシフト。
-      理論的な学習を重ねる前向きな経験となった</p>
-  <a class="portfolio_link" href="https://github.com/Iwasaki-Y0125/WeatherlogProto" target="_blank">秋のお天気 ゆらぎログのＧｉｔＨｕｂ</a><br>
-  <a class="portfolio_link" href="https://note.com/iwayu0125/n/n3c4488edd41a" target="_blank">秋のお天気 ゆらぎログのｎｏｔｅ</a><br>
+
+    <div class="project-details">
+      <details class="project-detail">
+        <summary>開発背景</summary>
+        <div class="detail-panel">
+          <ul class="detail-list">
+            <li>最近の SNSは ちょっと 本音 が いいづらい(˘･_･˘)</li>
+            <li>匿名同士なら 気兼ねなく話せる気もするけど、住み分けが難しい</li>
+            <li>「話題 × ポジネガ」で住み分けできれば 匿名同士でも <br>ゆるく安心して 話せるのでは？ という仮説から PoCを 開発</li>
+            </li>
+          </ul>
+        </div>
+      </details>
+      <details class="project-detail">
+        <summary>開発補足</summary>
+        <div class="detail-panel">
+          <ul class="detail-list">
+            <li>140字投稿をMeCabで形態素解析。名詞とポジネガスコアを抽出。<br>
+                似た話題・ポジネガ傾向の投稿をレコメンドする仕組みを実装。</li>
+            <li>チャットは 一対一 のやりとりに限定。<br>
+              他人に拡散されることがないので、安心して二人だけで話せる。</li>
+            <li>自動テストや自動デプロイを導入し、セキュリティ・プライバシーの観点も意識しながら改善を重ねた。</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <div class="project-body">
+      <div class="project-spec">
+        <div class="project-row">
+          <p class="project-label">概要</p>
+          <p class="project-value">気分と話題でつながるほっと安心できるSNS</p>
+        </div>
+        <div class="project-row">
+          <p class="project-label">開発時期</p>
+          <p class="project-value">プログラミング 7か月目</p>
+        </div>
+        <div class="project-row">
+          <p class="project-label">開発期間</p>
+          <p class="project-value">約3か月</p>
+        </div>
+        <div class="project-row">
+          <p class="project-label">主な技術</p>
+          <p class="project-value">Ruby on Rails / PostgreSQL / Docker</p>
+        </div>
+        <div class="project-row">
+          <p class="project-label">URL</p>
+          <a class="portfolio_link" href="https://www.tonetwo.net" target="_blank" rel="noopener noreferrer">https://www.tonetwo.net</a>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <br>
+
+  <div class="portfolio_article project-card">
+    <div class="project-header">
+      <p class="project-rating">RUNTEQ内の アプリ評価で いいね数 30 越え</p>
+      <p class="project-title">秋のお天気 ゆらぎログ</p>
+      <a href="https://github.com/Iwasaki-Y0125/weather_log_proto" target="_blank" rel="noopener noreferrer">
+        <img class="OGP_img" src="image/weatherlogproto_OGP.png" alt="weatherlogproto_OGP" />
+      </a>
+      <br>
+      <a class="portfolio_link" href="https://github.com/Iwasaki-Y0125/weather_log_proto" target="_blank" rel="noopener noreferrer">秋のお天気 ゆらぎログ の GitHub</a>
+    </div>
+
+    <div class="project-details">
+      <details class="project-detail">
+        <summary>開発背景</summary>
+        <div class="detail-panel">
+          <ul class="detail-list">
+            <li>RUNTEQミニアプリWeek2025に応募、テーマは「秋」</li>
+            <li>「秋」に関する課題やニーズを考え、<br>
+              秋口の気温の変化から体調や気分の調子を崩しがちな人が多い背景に注目し企画</li>
+          </ul>
+        </div>
+      </details>
+      <details class="project-detail">
+        <summary>開発補足</summary>
+        <div class="detail-panel">
+          <ul class="detail-list">
+            <li>外部APIを2つ組み合わせ、天気を自動で取得する仕組みを実装。<br>
+            HeartRails Geo API で 郵便番号から 緯度・経度 を取得<br> → Open-Meteo APIで気象データを取得</li>
+            <li>トップ画面に「ゆらゆらゆれる落ち葉の動画」を採用し、<br>
+              開いた瞬間に「おお～なんかええ感じ～」な体験</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+    <div class="project-body">
+      <div class="project-spec">
+        <div class="project-row">
+            <p class="project-label">概要</p>
+            <p class="project-value">気象と気分のゆらぎの記録アプリ</p>
+        </div>
+        <div class="project-row">
+          <p class="project-label">開発時期</p>
+          <p class="project-value">プログラミング 3か月目</p>
+        </div>
+        <div class="project-row">
+          <p class="project-label">開発期間</p>
+          <p class="project-value">10日間</p>
+        </div>
+        <div class="project-row">
+          <p class="project-label">主な技術</p>
+          <p class="project-value">Ruby on Rails / PostgreSQL / Docker</p>
+        </div>
+        <div class="project-row">
+          <p class="project-label">URL</p>
+          <p class="project-value">サービス終了（GitHubに詳細画面イメージあり）</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="portfolio_article project-card">
+    <div class="project-header">
+      <p class="project-rating">Battle of RUNTEQ 新人賞 受賞</p>
+      <p class="project-title">わたしのトリセツ.me</p>
+      <img class="OGP_img" src="image/torisetsu_me_OGP.png" alt="torisetsu_me_OGP"/><br>
+      <a class="portfolio_link" href="https://github.com/Iwasaki-Y0125/torisetsu_me" target="_blank" rel="noopener noreferrer">わたしのトリセツ.me の GitHub</a>
+    </div>
+
+    <div class="project-details">
+      <details class="project-detail">
+        <summary>開発背景</summary>
+        <div class="detail-panel">
+          <ul class="detail-list">
+            <li>初対面の場で相手と距離を縮める<br>ユーモアのある自己紹介ツールが欲しい</li>
+          </ul>
+        </div>
+      </details>
+      <details class="project-detail">
+        <summary>開発補足</summary>
+        <div class="detail-panel">
+          <ul class="detail-list">
+            <li>コンテスト期日に 間に合わせるため、<br>
+              企画から実装までを3日で進め、短期間でプロトタイプを作成</li>
+            <li>URLを共有するだけで 閲覧できるシンプルな構成</li>
+            <li>テンプレートや例文を用意し、「書きやすさ・伝えやすさ」に配慮</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <div class="project-body">
+      <div class="project-spec">
+        <div class="project-row">
+          <p class="project-label">概要</p>
+          <p class="project-value">オンラインで共有できるトリセツ型自己紹介アプリ</p>
+        </div>
+        <div class="project-row">
+          <p class="project-label">開発時期</p>
+          <p class="project-value">プログラミング 1か月目</p>
+        </div>
+        <div class="project-row">
+          <p class="project-label">開発期間</p>
+          <p class="project-value">3日間</p>
+        </div>
+        <div class="project-row">
+          <p class="project-label">主な技術</p>
+          <p class="project-value">Ruby / Sinatra / PostgreSQL / Docker</p>
+        </div>
+        <div class="project-row">
+          <p class="project-label">URL</p>
+          <p class="project-value">サービス終了（GitHubに詳細画面イメージあり）</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <a href="#" class="backToTop">▲ ページトップへ戻る</a>
 </div>
