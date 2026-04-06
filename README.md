@@ -1,6 +1,6 @@
 # Portfolio
 
-公開サイト: [https://iwasaki-y0125.github.io/Portfolio/](https://iwasaki-y0125.github.io/portfolio/)
+公開サイト: [https://iwasaki-y0125.github.io/portfolio/](https://iwasaki-y0125.github.io/portfolio/)
 
 ## 目的
 - 自分自身のプロフィールや作品を公開するサイトとして制作

@@ -3,133 +3,6 @@
   <h2>ポートフォリオ</h2>
   </section>
 
-    <div class="portfolio_article project-card">
-    <div class="project-header">
-      <p class="project-rating">SNS疲れの人のための本音を投稿できるSNS</p>
-      <p class="project-title">ToneTwo</p>
-
-    <a href="https://www.tonetwo.net" target="_blank" rel="noopener noreferrer">
-        <img class="OGP_img" src="image/tone_two_OGP.png" alt="tone_two_OGP_OGP" />
-    </a><br>
-      <a class="portfolio_link" href="https://github.com/Iwasaki-Y0125/tonetwo" target="_blank" rel="noopener noreferrer">ToneTwo の GitHub</a>
-    </div>
-
-    <div class="project-details">
-      <details class="project-detail">
-        <summary>開発背景</summary>
-        <div class="detail-panel">
-          <ul class="detail-list">
-            <li>最近の SNSは ちょっと 本音 が いいづらい(˘･_･˘)</li>
-            <li>匿名同士なら 気兼ねなく話せる気もするけど、住み分けが難しい</li>
-            <li>「話題 × ポジネガ」で住み分けできれば 匿名同士でも <br>ゆるく安心して 話せるのでは？ という仮説から PoCを 開発</li>
-            </li>
-          </ul>
-        </div>
-      </details>
-      <details class="project-detail">
-        <summary>開発補足</summary>
-        <div class="detail-panel">
-          <ul class="detail-list">
-            <li>140字投稿をMeCabで形態素解析。名詞とポジネガスコアを抽出。<br>
-                似た話題・ポジネガ傾向の投稿をレコメンドする仕組みを実装。</li>
-            <li>チャットは 一対一 のやりとりに限定。<br>
-              他人に拡散されることがないので、安心して二人だけで話せる。</li>
-            <li>自動テストや自動デプロイを導入し、セキュリティ・プライバシーの観点も意識しながら改善を重ねた。</li>
-          </ul>
-        </div>
-      </details>
-    </div>
-
-    <div class="project-body">
-      <div class="project-spec">
-        <div class="project-row">
-          <p class="project-label">概要</p>
-          <p class="project-value">気分と話題でつながるほっと安心できるSNS</p>
-        </div>
-        <div class="project-row">
-          <p class="project-label">開発時期</p>
-          <p class="project-value">プログラミング 7か月目</p>
-        </div>
-        <div class="project-row">
-          <p class="project-label">開発期間</p>
-          <p class="project-value">約3か月</p>
-        </div>
-        <div class="project-row">
-          <p class="project-label">主な技術</p>
-          <p class="project-value">Ruby on Rails / PostgreSQL / Docker</p>
-        </div>
-        <div class="project-row">
-          <p class="project-label">URL</p>
-          <a class="portfolio_link" href="https://www.tonetwo.net" target="_blank" rel="noopener noreferrer">https://www.tonetwo.net</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <br>
-
-  <div class="portfolio_article project-card">
-    <div class="project-header">
-      <p class="project-rating">RUNTEQ内の アプリ評価で いいね数 30 越え</p>
-      <p class="project-title">秋のお天気 ゆらぎログ</p>
-      <a href="https://github.com/Iwasaki-Y0125/weather_log_proto" target="_blank" rel="noopener noreferrer">
-        <img class="OGP_img" src="image/weatherlogproto_OGP.png" alt="weatherlogproto_OGP" />
-      </a>
-      <br>
-      <a class="portfolio_link" href="https://github.com/Iwasaki-Y0125/weather_log_proto" target="_blank" rel="noopener noreferrer">秋のお天気 ゆらぎログ の GitHub</a>
-    </div>
-
-    <div class="project-details">
-      <details class="project-detail">
-        <summary>開発背景</summary>
-        <div class="detail-panel">
-          <ul class="detail-list">
-            <li>RUNTEQミニアプリWeek2025に応募、テーマは「秋」</li>
-            <li>「秋」に関する課題やニーズを考え、<br>
-              秋口の気温の変化から体調や気分の調子を崩しがちな人が多い背景に注目し企画</li>
-          </ul>
-        </div>
-      </details>
-      <details class="project-detail">
-        <summary>開発補足</summary>
-        <div class="detail-panel">
-          <ul class="detail-list">
-            <li>外部APIを2つ組み合わせ、天気を自動で取得する仕組みを実装。<br>
-            HeartRails Geo API で 郵便番号から 緯度・経度 を取得<br> → Open-Meteo APIで気象データを取得</li>
-            <li>トップ画面に「ゆらゆらゆれる落ち葉の動画」を採用し、<br>
-              開いた瞬間に「おお～なんかええ感じ～」な体験</li>
-          </ul>
-        </div>
-      </details>
-    </div>
-    <div class="project-body">
-      <div class="project-spec">
-        <div class="project-row">
-            <p class="project-label">概要</p>
-            <p class="project-value">気象と気分のゆらぎの記録アプリ</p>
-        </div>
-        <div class="project-row">
-          <p class="project-label">開発時期</p>
-          <p class="project-value">プログラミング 3か月目</p>
-        </div>
-        <div class="project-row">
-          <p class="project-label">開発期間</p>
-          <p class="project-value">10日間</p>
-        </div>
-        <div class="project-row">
-          <p class="project-label">主な技術</p>
-          <p class="project-value">Ruby on Rails / PostgreSQL / Docker</p>
-        </div>
-        <div class="project-row">
-          <p class="project-label">URL</p>
-          <p class="project-value">サービス終了（GitHubに詳細画面イメージあり）</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <br>
-
   <div class="portfolio_article project-card">
     <div class="project-header">
       <p class="project-rating">Battle of RUNTEQ 新人賞 受賞</p>
@@ -186,6 +59,132 @@
     </div>
   </div>
 
+  <br>
+
+  <div class="portfolio_article project-card">
+    <div class="project-header">
+      <p class="project-rating">RUNTEQ内の アプリ評価で いいね数 30 越え</p>
+      <p class="project-title">秋のお天気 ゆらぎログ</p>
+      <a href="https://github.com/Iwasaki-Y0125/weather_log_proto" target="_blank" rel="noopener noreferrer">
+        <img class="OGP_img" src="image/weatherlogproto_OGP.png" alt="weatherlogproto_OGP" />
+      </a>
+      <br>
+      <a class="portfolio_link" href="https://github.com/Iwasaki-Y0125/weather_log_proto" target="_blank" rel="noopener noreferrer">秋のお天気 ゆらぎログ の GitHub</a>
+    </div>
+
+    <div class="project-details">
+      <details class="project-detail">
+        <summary>開発背景</summary>
+        <div class="detail-panel">
+          <ul class="detail-list">
+            <li>RUNTEQミニアプリWeek2025に応募、テーマは「秋」</li>
+            <li>「秋」に関する課題やニーズを考え、<br>
+              秋口の気温の変化から体調や気分の調子を崩しがちな人が多い背景に注目し企画</li>
+          </ul>
+        </div>
+      </details>
+      <details class="project-detail">
+        <summary>開発補足</summary>
+        <div class="detail-panel">
+          <ul class="detail-list">
+            <li>外部APIを2つ組み合わせ、天気を自動で取得する仕組みを実装。<br>
+            HeartRails Geo API で 郵便番号から 緯度・経度 を取得<br> → Open-Meteo APIで気象データを取得</li>
+            <li>トップ画面に「ゆらゆらゆれる落ち葉の動画」を採用し、<br>
+              開いた瞬間に「おお～なんかええ感じ～」な体験</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+    <div class="project-body">
+      <div class="project-spec">
+        <div class="project-row">
+            <p class="project-label">概要</p>
+            <p class="project-value">気象と気分のゆらぎの記録アプリ</p>
+        </div>
+        <div class="project-row">
+          <p class="project-label">開発時期</p>
+          <p class="project-value">プログラミング 4か月目</p>
+        </div>
+        <div class="project-row">
+          <p class="project-label">開発期間</p>
+          <p class="project-value">10日間</p>
+        </div>
+        <div class="project-row">
+          <p class="project-label">主な技術</p>
+          <p class="project-value">Ruby on Rails / PostgreSQL / Docker</p>
+        </div>
+        <div class="project-row">
+          <p class="project-label">URL</p>
+          <p class="project-value">サービス終了（GitHubに詳細画面イメージあり）</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+    <div class="portfolio_article project-card">
+    <div class="project-header">
+      <p class="project-rating">SNS疲れの人のための本音を投稿できるSNS</p>
+      <p class="project-title">ToneTwo</p>
+
+    <a href="https://www.tonetwo.net" target="_blank" rel="noopener noreferrer">
+        <img class="OGP_img" src="image/tone_two_OGP.png" alt="tone_two_OGP_OGP" />
+    </a><br>
+      <a class="portfolio_link" href="https://github.com/Iwasaki-Y0125/tonetwo" target="_blank" rel="noopener noreferrer">ToneTwo の GitHub</a>
+    </div>
+
+    <div class="project-details">
+      <details class="project-detail">
+        <summary>開発背景</summary>
+        <div class="detail-panel">
+          <ul class="detail-list">
+            <li>最近の SNSは ちょっと 本音 が いいづらい(˘･_･˘)</li>
+            <li>匿名同士なら 気兼ねなく話せる気もするけど、住み分けが難しい</li>
+            <li>「話題 × ポジネガ」で住み分けできれば 匿名同士でも <br>ゆるく安心して 話せるのでは？ という仮説から PoCを 開発</li>
+            </li>
+          </ul>
+        </div>
+      </details>
+      <details class="project-detail">
+        <summary>開発補足</summary>
+        <div class="detail-panel">
+          <ul class="detail-list">
+            <li>140字投稿をMeCabで形態素解析。名詞とポジネガスコアを抽出。<br>
+                似た話題・ポジネガ傾向の投稿をレコメンドする仕組みを実装。</li>
+            <li>チャットは 一対一 のやりとりに限定。<br>
+              他人に拡散されることがないので、安心して二人だけで話せる。</li>
+            <li>自動テストや自動デプロイを導入し、セキュリティ・プライバシーの観点も意識しながら改善を重ねた。</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <div class="project-body">
+      <div class="project-spec">
+        <div class="project-row">
+          <p class="project-label">概要</p>
+          <p class="project-value">気分と話題でつながるほっと安心できるSNS</p>
+        </div>
+        <div class="project-row">
+          <p class="project-label">開発時期</p>
+          <p class="project-value">プログラミング 9か月目</p>
+        </div>
+        <div class="project-row">
+          <p class="project-label">開発期間</p>
+          <p class="project-value">約3か月</p>
+        </div>
+        <div class="project-row">
+          <p class="project-label">主な技術</p>
+          <p class="project-value">Ruby on Rails / PostgreSQL / Docker</p>
+        </div>
+        <div class="project-row">
+          <p class="project-label">URL</p>
+          <a class="portfolio_link" href="https://www.tonetwo.net" target="_blank" rel="noopener noreferrer">https://www.tonetwo.net</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <a href="#" class="backToTop">▲ ページトップへ戻る</a>
 </div>

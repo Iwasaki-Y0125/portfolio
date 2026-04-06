@@ -66,6 +66,10 @@
   font-weight: 400;
 }
 
+.project-detail summary:hover {
+  color: #ff0000;
+}
+
 .project-detail summary::-webkit-details-marker {
   display: none;
 }
